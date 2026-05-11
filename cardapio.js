@@ -25,3 +25,20 @@ function calcularTotal(listaPedido){
     return total;
 
 }
+
+function calcularTotal(listaPedido){
+    let total = listaPedido[0].preco + listaPedido[1]preco;
+    return total;
+}
+
+ function calcularComDesconto(total, clienteObj) {
+  if (clienteObj.fidelidade === true) {
+      let desconto = total *0.10;
+      console.log('Desconto fidelidade: R${desconto}');
+      return total; - desconto;
+  }
+     return total;
+ }
+      
+  }
+ }
