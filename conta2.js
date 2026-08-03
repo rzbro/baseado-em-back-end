@@ -10,10 +10,20 @@ function criarConta(titular, saldoInicial) {
                 console.log(`Depósito de R$ ${valor} realizado com sucesso!`);
             }
         },
-        getSaldo() {
+        sacar(valor){
+            if (valor > saldo) {
+                console.log("saldo insuficiente.");
+                return
+            }
+            saldo -=valor;
+        },
+        get saldoAtual(){
             return saldo;
-        }
+        },
     };
 }
+ const contas = [criarConta("joao",1000),criarConta("paula",5000)];
 
-}
+ contas[0].depositar(200);
+
+ contas.forEarch((conta))
