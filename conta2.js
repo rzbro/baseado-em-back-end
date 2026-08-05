@@ -26,4 +26,4 @@ function criarConta(titular, saldoInicial) {
 
  contas[0].depositar(200);
 
- contas.forEarch((conta))
+ contas.forEach(conta => console.log(conta.saldoAtual));
